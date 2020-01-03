@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/top"/>
+
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:background="@drawable/add"
+        android:layout_marginTop="21.5dp"
+        android:layout_marginEnd="18.5dp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:layout_marginTop="72dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"/>
+
+    <TextView
+        android:id="@+id/days_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:layout_below="@id/top"
+        android:layout_marginTop="26dp"
+        android:textAlignment="center"
+        android:textColor="@color/purple"
+        android:textSize="103sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/days"
+        android:layout_below="@id/top"
+        android:layout_toRightOf="@id/days_number"
+        android:layout_marginTop="103dp"
+        android:layout_marginStart="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/purple"
+        android:textSize="35sp"/>
+
+    <ImageView
+        android:id="@+id/bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bar"
+        android:layout_below="@id/days_number"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/time_rad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/time_rad"
+        android:layout_below="@id/bar"
+        android:layout_marginTop="38.5dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/hours_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:layout_below="@id/bar"
+        android:layout_toLeftOf="@+id/comma1"
+        android:layout_marginTop="74.5dp"
+        android:layout_marginEnd="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/comma1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comma"
+        android:layout_below="@id/bar"
+        android:layout_toLeftOf="@+id/minutes_number"
+        android:layout_marginTop="78.5dp"
+        android:layout_marginEnd="22dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/minutes_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:layout_below="@id/bar"
+        android:layout_marginTop="74.5dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/comma2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comma"
+        android:layout_below="@id/bar"
+        android:layout_toRightOf="@+id/minutes_number"
+        android:layout_marginTop="78.5dp"
+        android:layout_marginStart="22dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/seconds_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:layout_below="@id/bar"
+        android:layout_toRightOf="@+id/comma2"
+        android:layout_marginTop="74.5dp"
+        android:layout_marginStart="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hours"
+        android:layout_below="@id/time_rad"
+        android:layout_toLeftOf="@+id/minutes"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="44dp"
+        android:textAlignment="center"
+        android:textColor="@color/purple_rad"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minutes"
+        android:layout_below="@id/time_rad"
+        android:layout_marginTop="9dp"
+        android:textAlignment="center"
+        android:textColor="@color/blue_rad"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seconds"
+        android:layout_below="@id/time_rad"
+        android:layout_toRightOf="@+id/minutes"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="38dp"
+        android:textAlignment="center"
+        android:textColor="@color/light_blue_rad"
+        android:textSize="15sp"/>
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+
+</RelativeLayout>
